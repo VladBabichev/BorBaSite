@@ -1,0 +1,24 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+<script src="~/js/borba.js"></script>
+
+<div class="row">
+	@Html.Partial("projectHeaders/Checkpoint")
+	<p>
+		Планшетное приложение для строительных инспекторов.
+	</p>
+	<p>
+		Приложение позволяет контролировать выполнение работ на строящихся объектах, 
+		фотографировать объекты и создавать графические примечания на фотографиях. 
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros").
+	</p>
+	<p>
+		Технологии: C#, MS SQL Server, System.Data.SqlServerCe, Microsoft.Ink, System.Web
+	</p>
+</div>
+@Html.Partial("screens/_CheckpointScreens")

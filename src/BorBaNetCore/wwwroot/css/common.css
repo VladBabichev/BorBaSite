@@ -1,0 +1,394 @@
+table td a i.fa {
+	font-size: 14px !important;
+}
+
+.logo-element {
+	display: block;
+	font-weight: bold;
+}
+
+.ibox-content {
+	padding: 15px 20px 10px;
+}
+
+.datepicker {
+	z-index: 2500 !important;
+}
+
+.padding-l-7 {
+	padding-left: 7px;
+}
+
+@media (max-width: 992px) {
+	.padding-l-7 {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 992px) {
+	.padding-r-0 {
+		padding-right: 0;
+	}
+	.contractChecks {
+	    padding-left: 30px;
+	}
+}
+
+@media (min-width: 922px) {
+    .employeeSkillsSet {
+        float: right;
+    }
+	.contractSkills {
+		width: 400px !important;
+	}
+	.contractChecks {
+		width: 583px !important;
+	}
+}
+
+.contractSkills {
+    padding-left: 30px;
+}
+
+.margin-l-10 {
+	margin-left: 10px;
+}
+
+.no-padding-v {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.dropdown-menu {
+	z-index: 3000;
+}
+
+.bootstrap-timepicker-widget table td a {
+	border: 1px solid transparent;
+	color: #333;
+	display: inline-block;
+	margin: 0;
+	outline: 0 none;
+	padding: 8px 0;
+	width: 100%;
+}
+
+.bootstrap-timepicker-widget table td a i {
+	font-size: 18px;
+	margin-top: 2px;
+}
+
+.bootstrap-timepicker-widget table td a i {
+	font-size: 18px;
+	margin-top: 2px;
+}
+
+.icon-chevron-up,
+.icon-chevron-down {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.icon-chevron-up:before {
+	content: "\f077";
+}
+
+.icon-chevron-down:before {
+	content: "\f078";
+}
+
+li.special_link {
+	padding: 0 24px;
+}
+
+li.special_link.active {
+	padding: 0;
+}
+
+div.pre {
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #333;
+	display: block;
+	font-size: 13px;
+	line-height: 1.42857;
+	margin: 0 0 10px;
+	padding: 10px;
+}
+
+div.pre .link-edit {
+	opacity: 0;
+	margin-right: -13px;
+}
+
+div.pre:hover .link-edit {
+	opacity: 1;
+}
+
+.table.table-striped tr:hover td {
+	background-color: #eee;
+}
+
+.nav.nav-tabs.nav > li > a {
+	color: #555;
+}
+
+#wizard a[href="#cancel"] {
+	background: white none repeat scroll 0 0;
+	border: 1px solid #e7eaec;
+	color: inherit;
+}
+
+#wizard a[href="#cancel"]:hover {
+	border: 1px solid #d2d2d2;
+}
+
+.loading {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	width: 32px;
+	height: 32px;
+	z-index: 101;
+	padding: 6px;
+	margin: 5px;
+	text-align: center;
+	font-weight: bold;
+	display: none;
+	border-width: 2px !important;
+	font-size: 11px;
+	background: url('../images/loading.gif') no-repeat center center;
+}
+
+.bootstrap-timepicker .input-group-addon {
+	cursor: pointer;
+}
+
+.validation-summary-errors ul {
+	list-style: none;
+	padding: 0 1em;
+	text-align: left;
+}
+
+.profile-element img {
+	width: 48px;
+}
+
+#side-menu .profile-element .fa-user {
+	width: 48px;
+	height: 48px;
+	text-indent: 1px;
+	float: none;
+}
+
+@media (min-width: 1200px) {
+	.block-view {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+		.block-view > div {
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+	.clients .ibox {
+		left: 0;
+		margin: 20px -20px 0;
+		position: relative;
+	}
+
+	.clients .ibox-title {
+		cursor: pointer;
+		margin-bottom: -15px;
+		padding: 14px 30px 7px;
+	}
+
+	.clients .ibox-content {
+		margin-top: 15px;
+		position: absolute;
+		width: 100%;
+		z-index: 100;
+	}
+
+	.clients .border-bottom {
+		border-bottom: none !important;
+	}
+}
+
+h3 a {
+	color: #337ab7 !important;
+}
+
+h3 a:hover {
+	color: #23527c !important;
+}
+
+.ibox-title {
+	border-top-width: 1px;
+}
+
+.sites .col-md-2.col-xs-2.col-lg-5.col-sm-4 {
+	padding: 0 3px;
+}
+
+#thumbs img {
+	padding: 2px;
+}
+
+.contact-box {
+	width: 100%;
+}
+
+.contact-box a.btn {
+	color: #ffffff;
+}
+
+.prompts-block li {
+	margin: 5px 0;
+}
+
+.dropzone.dz-clickable {
+	background: no-repeat center center rgba(0,0,0,0.03);
+	background-size: contain;
+}
+
+.dropzone .dz-default.dz-message span {
+	height: auto;
+	background: rgb(248, 248, 248);
+	padding: 5px;
+	color: black;
+	border-radius: 5px;
+}
+
+.chat-discussion .chat-message.chat-sent .message-date {
+	float: right;
+}
+
+.chat-discussion .chat-message.chat-received .message-date {
+	float: left;
+}
+
+.chat-discussion .chat-message.chat-sent .message {
+	text-align: left;
+	margin-left: 55px;
+}
+
+.chat-discussion .chat-message.chat-received .message {
+	text-align: right;
+	margin-right: 55px;
+}
+
+.chat-discussion .chat-message.chat-sent .message-avatar {
+	float: left;
+	margin-right: 10px;
+}
+
+.chat-discussion .chat-message.chat-received .message-avatar {
+	float: right;
+	margin-left: 10px;
+}
+
+select.required + .chosen-container .chosen-single.chosen-default span {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 7px;
+}
+
+select.required + .chosen-container .chosen-single.chosen-default:before,
+select.required + .chosen-container .search-field:before {
+	content: "*";
+	color: #FF0000 !important;
+}
+
+select.required + .chosen-container .search-field:before {
+	margin-left: 7px;
+}
+
+select.required + .chosen-container .search-choice + .search-field:before {
+	content: '';
+	margin-left: 0;
+}
+
+select.required + .chosen-container + .error-container.success .icon-success {
+	display: block;
+	background-image: url('../images/check-icon.svg');
+	background-size: 21px;
+	background-repeat: no-repeat;
+	background-position: calc(100% - 7px) 5px;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 1px;
+	right: 35px;
+}
+
+.validation-form label.error {
+	color: #cc5965;
+	display: none !important;
+	margin-left: 5px;
+	right: 16px;
+	top: 45px;
+	position: absolute;
+	height: 35px;
+	background: #F7F7F7;
+	z-index: 10;
+	padding: 8px;
+	margin: 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0 0 4px 1px rgb(202, 202, 202);
+	-webkit-box-shadow: 0 0 4px 1px rgb(202, 202, 202);
+	-moz-box-shadow: 0 0 4px 1px rgb(202, 202, 202);
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.validation-form label.error:before {
+	content: '';
+	top: -16px;
+	right: 10px;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 17px solid #F7F7F7;
+}
+
+.validation-form .error-container:hover label.error {
+	display: block !important;
+}
+
+.bottom20 {
+    margin-bottom: 20px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.mediumWidth {
+    width: 250px;
+    display: inline-table;
+}
+
+.boldFont {
+	font-weight: bold;
+}
+
+.flex {
+	display:flex;
+}

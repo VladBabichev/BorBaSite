@@ -1,0 +1,13 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<h4>@SharedLocalizer["AspNetCore"]</h4>
+<span class="visible-md visible-lg "><br /></span>
+<ul>
+	@Html.Partial("carouselItems\\MsjWeb")
+	@Html.Partial("carouselItems\\SmartHouse")
+</ul>
+<span class="visible-md visible-lg "><br /></span>

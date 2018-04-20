@@ -1,0 +1,20 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+
+<div class="row">
+	@Html.Partial("projectHeaders/AifpWeb")
+	<p>
+		WebForms-application for online complex psychological tests and tests of the abilities of social workers (police, firefighters, etc.)
+		when they get a job.
+	</p>
+	<p />
+	@Html.Partial("links/_linkCompros")
+	@Html.Partial("links/_linkAifp")
+	<p>
+		Thechologies: VB.Net, C#, XML, XSLT, ASP.NET Web Forms, ADO.NET, MS SQL Server
+	</p>
+</div>
+@Html.Partial("screens/_AifpWebScreens")

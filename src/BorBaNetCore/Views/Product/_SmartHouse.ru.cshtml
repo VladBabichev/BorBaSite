@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";   
+}
+
+<div class="row">
+	@Html.Partial("projectHeaders/SmartHouse")
+	<p>
+		Web-приложение "Умный Дом".
+	</p>
+	<p>
+		Приложение позволяет управлять температурой в доме в онлайн-режиме.
+	</p>
+	<p>
+		Технологии: C#, ASP.NET MVC 5, LINQ, MS SQL Server, JavaScript, HTML5, CSS, Bootstrap, Google API, Web API
+	</p>
+	<p>
+		Посмотреть работающую версию этого приложения можно <a href="http://82.117.250.53:8080" target="_blank">здесь</a>.
+		Для входа введите имя <i>admin</i> и пароль <i>admin</i>.
+	</p>
+</div>
+@Html.Partial("screens/_SmartHouseScreens")

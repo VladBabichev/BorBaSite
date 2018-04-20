@@ -1,0 +1,26 @@
+﻿@using BorBa;
+@model CurrentUser
+@if (Model != null)
+{
+	<div class="dropdown profile-element">
+		<span>
+			@if (Model.HasImage)
+			{
+				<img alt="image" class="img-circle" src="@Url.Action("image","employee",new { id=Model.Id})" />
+			}
+			else
+			{
+				<i class="fa fa-user user-icon-small"></i>
+			}
+		</span>
+		<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+			<span class="clear">
+				<span class="text-muted text-xs block">@Model.FullName<b class="caret"></b></span>
+			</span>
+		</a>
+		<ul class="dropdown-menu animated fadeInRight m-t-xs">
+			<li><a asp-controller="Employee" asp-action="Index" asp-route-id="@Model.Id">Profile</a></li>
+			<li><a asp-controller="Account" asp-action="Logout">Log out</a></li>
+		</ul>
+	</div>
+}

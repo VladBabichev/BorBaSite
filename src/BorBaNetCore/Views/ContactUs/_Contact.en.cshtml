@@ -1,0 +1,29 @@
+﻿@using BorBaNetCore.DataModel
+
+@{
+	Layout = null;
+}
+
+<h4>Contact Us:</h4>
+
+@Html.Partial("_teamPhotos")
+
+<p>
+	<br />
+	If you have any suggestions, questions or comments, you can call us on any of these phones or write a letter to any specified mailbox.
+</p>
+<p>
+	Or you can send us a message by filling out the form below.
+</p>
+<p>
+	We guarantee to get back to you by the next business day.
+</p>
+<div>
+	@Html.Partial("_PostMessageForm")
+	@*@Html.Partial("_Messages.ru", ViewBag.Messages as List<Messages>)*@
+</div>
+
+
+
+
+

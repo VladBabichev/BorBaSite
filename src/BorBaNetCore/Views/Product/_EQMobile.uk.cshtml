@@ -1,0 +1,52 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+<div class="row">
+	@Html.Partial("projectHeaders/EQMobile")
+	<p>
+		Мобільні програмні застосування для персоналу автомайстерні.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkPPG")
+	</p>
+	<p>
+		Система EQ містить два мобільних застосування і Web-сервіс для їх зв'язку з базою даних EQ.
+	</p>
+	<p>
+		<h4>EQ-SFDC (Shop floor data capture)</h4>
+	</p>
+	<p>
+		Android-застосування для виробничого персоналу автомайстерні.
+	</p>
+	<p>
+		Застосування дозволяє переглядати календар робіт і реєструвати виконані роботи в режимі онлайн.
+	</p>
+	<p>
+		Технології: Java for Android, XML
+	</p>
+
+	<p>
+		<h4>EQ-Photos</h4>
+	</p>
+	<p>
+		Мобільне кроссплатформне застосування дозволяє фотографувати транспортні засоби, розпізнавати державні номери і автоматично реєструвати ДТП в базі даних EQ.
+	</p>
+	<p>
+		Технології: Xamarin, C#, json, XML
+	</p>
+
+	<p>
+		<h4>EQ-WebService</h4>
+	</p>
+	<p>
+		Web-сервіс надає методи для зв'язку EQ-SFDC і EQ-Photos з базою даних EQ.
+	</p>
+	<p>
+		Технології: WCF, VB.Net, MS SQL Server
+	</p>
+
+</div>
+@Html.Partial("screens/_EQMobileScreens")

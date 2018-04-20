@@ -1,0 +1,22 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<div class="row">
+	<div class="col-md-9 col-md-offset-3">
+		<h4>@SharedLocalizer["Team"]</h4>
+	</div>
+</div>
+<div class="row" style="margin-bottom:15px">
+	<div class="col-md-9 col-md-offset-3">
+		@SharedLocalizer["Offer0"]
+		@Html.Partial("carouselItems\\_Offer")
+	</div>
+</div>
+@*<div class="row">
+	<div class="col-md-9 col-md-offset-3">
+		@Html.Partial("carouselItems\\_Offer")
+	</div>
+</div>*@

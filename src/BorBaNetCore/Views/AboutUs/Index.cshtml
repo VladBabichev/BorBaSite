@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";   
+}
+
+@Html.Partial("_info")
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".about_MenuItem").addClass("active");
+        });
+    </script>
+}

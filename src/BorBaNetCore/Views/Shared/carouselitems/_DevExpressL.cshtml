@@ -1,0 +1,14 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<h4>@SharedLocalizer["DevExpress"]</h4>
+<span class="visible-md visible-lg "><br /></span>
+<ul>
+	@Html.Partial("carouselItems\\EQWeb")
+	@Html.Partial("carouselItems\\EQWin")
+	@Html.Partial("carouselItems\\TED")
+	@Html.Partial("carouselItems\\H2O")
+</ul>

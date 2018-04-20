@@ -1,0 +1,11 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<li>
+	<a asp-controller="Product" asp-action="EQWeb" class="tooltips" title="@SharedLocalizer["EQWeb"]">
+		<span style="color:white">EQ-Web</span>
+	</a>
+</li>

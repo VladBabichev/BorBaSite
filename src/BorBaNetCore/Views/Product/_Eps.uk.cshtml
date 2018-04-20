@@ -1,0 +1,22 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+<div class="row">
+	@Html.Partial("projectHeaders/Eps")
+	<p>
+		WinForms-застосування для розрахунків за поставлені енергоресурси.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkEps")
+	</p>
+	<p>
+		Застосування дозволяє формувати рахунки і здійснювати розрахунки за поставлені енергоресурси, формувати аналітичну та фінансову звітність.
+	</p>
+	<p>
+		Технології: WinForms, C#, Visual Studio Tools for Office, ADO.NET, MS SQL Server, PostgreSQL
+	</p>
+</div>
+@Html.Partial("screens/_EpsScreens")

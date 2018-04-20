@@ -1,0 +1,13 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<h4>@SharedLocalizer["Mobile"]</h4>
+<span class="visible-md visible-lg "><br /></span>
+<ul>
+	@Html.Partial("carouselItems\\EQMobile")
+	@Html.Partial("carouselItems\\MsjMobile")
+</ul>
+<span class="carousel slide visible-md visible-lg "><br /></span>

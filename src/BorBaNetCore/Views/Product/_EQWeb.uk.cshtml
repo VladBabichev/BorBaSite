@@ -1,0 +1,29 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+
+<div class="row">
+	@Html.Partial("projectHeaders/EQWeb")
+	<p>
+		Web-версія системи для автомайстерень, що виконують ремонт транспортних засобів, пошкоджених в ДТП.
+	</p>
+	<p>
+		Web-застосування дозволяє реєструвати ДТП і формувати кошторис робіт і запчастин в режимі онлайн.
+	</p>
+
+	<p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkPPG")
+	</p>
+
+	<p>
+		Технології: VB.Net, C#, XML, XSLT, ASP.NET Web Forms, ADO.NET, MS SQL Server, DevExpress, 3ds Max
+	</p>
+	<p>
+		Подивитися працюючу версію цієї програми можна <a href="http://82.117.250.53/EQWEB" target="_blank">тут</a>.
+		Для входу введіть ім'я  <i>test</i> і пароль <i>1</i>.
+	</p>
+</div>
+@Html.Partial("screens/_EQWebScreens")

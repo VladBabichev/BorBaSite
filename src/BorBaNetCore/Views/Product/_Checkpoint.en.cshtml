@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<script src="~/js/borba.js"></script>
+
+<div class="row">
+	@Html.Partial("projectHeaders/Checkpoint")
+    <p>
+        The tablet application for building inspectors.
+    </p>
+    <p>
+        The application provides managements of works executions on the objects under construction andalso provides 
+		to take a pictures and draw notes on photos.
+    </p>
+	<p>
+		@Html.Partial("links/_linkCompros").
+	</p>
+    <p>
+        Thechologies: C#, MS SQL Server, System.Data.SqlServerCe, Microsoft.Ink, System.Web
+    </p>
+</div>
+@Html.Partial("screens/_CheckpointScreens")

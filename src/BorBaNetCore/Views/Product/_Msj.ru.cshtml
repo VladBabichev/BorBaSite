@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";   
+}
+<script src="~/js/borba.js"></script>
+
+<div class="row">
+	@Html.Partial("projectHeaders/Msj")
+	<p>
+		Web-приложение для клининговой компании, которое позволяет планировать и контролировать выполнение работ у заказчиков.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+	</p>
+	<p>
+		Технологии: C#, ASP.NET MVC 5, LINQ, MS SQL Server, JavaScript, HTML5, CSS, Bootstrap, Google API, Web API
+	</p>
+	<p>
+		Посмотреть работающую версию этого приложения можно <a href="http://82.117.250.53:5000" target="_blank">здесь</a>.
+		Для входа введите имя <i>admin</i> и пароль <i>admin</i>.
+	</p>
+</div>
+@Html.Partial("screens/_msjScreens")

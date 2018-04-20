@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var currentCulture = ViewBag.CurrentCulture;   
+}
+
+@Html.Partial("_Contact")
+
+
+	@section scripts
+	{
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(".contact_MenuItem").addClass("active");
+
+				//$(".txtText").change(function () {
+				//	$(".btnSave").removeAttr('disabled');
+				//})
+
+				$(".nav-item").removeClass("active");
+				$(".contact_MenuItem").addClass("active");
+			});
+
+			function load3dCur() {
+				var car = 'Subaru';
+				var element = this;
+				$.ajax({
+					url: "/ContactUs/GetSTL",
+					type: "POST",
+					data: { model: car },
+					dataType: "json",
+					traditional: true,
+					contentType: "application/json; charset=utf-8",
+					success: function (data) {
+						debugger;
+						if (data.status == 5) {
+
+							for (var i = 0; i < data.result.length; i++) {
+								data.result[i].name;
+							}
+						}
+					},
+					error: function (ex) {
+						//debugger;
+						alert(ex.statusText);
+					}
+				}).error(function (data) {
+
+					//debugger;
+				});
+
+			}
+		</script>
+	}

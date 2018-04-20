@@ -1,0 +1,204 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<div style="margin-top:20px;margin-bottom:20px;min-width:0px;">
+	<h4>@SharedLocalizer["ProjectsTop"]</h4>
+</div>
+<div class="row"  style="color:black;min-width:0px;">
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="EQWin">
+			<img src="~/images/Logos/EQWin.svg" alt="EQ-Win" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<h3>EQ-Win</h3>
+			@SharedLocalizer["EQWin"]
+			<footer style="text-align:right"><sub>Estimate Quote - Win</sub></footer>
+		</article>
+	</div>
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="EQWeb">
+			<img src="~/images/Logos/EQWeb.svg" alt="EQ-Web" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<h3>EQ-Web</h3>
+			@SharedLocalizer["EQWeb"]
+			<footer style="text-align:right"><sub>Estimate Quote - Web</sub></footer>
+		</article>
+	</div>
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="EQMobile">
+			<img src="~/images/Logos/EQMobile.svg" alt="EQ-Mobile" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<h3>EQ-Mobile</h3>
+			@SharedLocalizer["EQMobile"]
+			<footer style="text-align:right"><sub>Estimate Quote - Mobile</sub></footer>
+		</article>
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="Mvp">
+			<img src="~/images/Logos/Mvp.svg" alt="Mvp" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<h3>MVP</h3>
+			@SharedLocalizer["Mvp"]
+		</article>
+		<footer style="text-align:right">
+			<sub>MVP</sub>
+		</footer>
+	</div>
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="Aifp">
+			<img src="~/images/Logos/Aifp.svg" alt="Aifp" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<h3>AIFP</h3>
+			@SharedLocalizer["Aifp"]
+		</article>
+		<footer style="text-align:right">
+			<sub>Australian Institute of Forensic Psychology</sub>
+		</footer>
+	</div>
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="AifpWeb">
+			<img src="~/images/Logos/AifpWeb.svg" alt="Aifp-Web" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<h3>AIFP Online Testing</h3>
+			@SharedLocalizer["AifpWeb"]
+		</article>
+		<footer style="text-align:right">
+			<sub>Australian Institute of Forensic Psychology</sub>
+		</footer>
+	</div>
+	<div class="clearfix"></div>
+
+    <div class="col-lg-4 col-md-4" style="margin-top:25px">
+        <a asp-controller="Product" asp-action="PropertyStore">
+			<img src="~/images/Logos/PropertyStore.svg" alt="PropertyStore" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+        </a>
+        <article >
+            <h3>PStore</h3>   
+			@SharedLocalizer["PropertyStore"]
+        </article>    
+        <footer style="text-align:right">
+            <sub>Property Store</sub>
+        </footer>  
+    </div>
+    <div class="col-lg-4 col-md-4" style="margin-top:25px">
+        <a asp-controller="Product" asp-action="Eps">
+			<img src="~/images/Logos/Eps.svg" alt="Eps" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+        </a>
+        <article >
+            <header><h3>EPS Billing</h3>  </header>
+			@SharedLocalizer["Eps"]
+            <footer style="text-align:right"><sub>Energy Price Solution - Billing</sub></footer>
+        </article>   
+    </div>
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="Ted" style="border:none;">
+			<img src="~/images/Logos/TED.svg" alt="TED" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<header><h3>TED</h3>  </header>
+			@SharedLocalizer["TED"]
+			<footer style="text-align:right"><sub>Energy Price Solution - TED</sub></footer>
+		</article>
+	</div>
+	<div class="clearfix"></div>
+
+    <div class="col-lg-4 col-md-4" style="margin-top:25px">
+        <a asp-controller="Product" asp-action="H2o">
+			<img src="~/images/Logos/H2o.svg" alt="H2o" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+        </a>
+        <section >
+            <header><h3>H2O</h3>  </header>
+			@SharedLocalizer["H2O"]
+            <footer style="text-align:right"><sub>H2O Heating</sub></footer>
+        </section>
+    </div>
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="Msj">
+			<img src="~/images/Logos/Msj.svg" alt="Msj" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<header><h3>MSJ-Web</h3></header>
+			@SharedLocalizer["Msj"]
+			<footer style="text-align:right">
+				<sub>MSJ</sub>
+			</footer>
+		</article>
+	</div>
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="MsjMobile">
+			<img src="~/images/Logos/MsjMobile.svg" alt="MsjMobile" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<header><h3>MSJ-Mobile</h3></header>
+			@SharedLocalizer["MsjMobile"]
+			<footer style="text-align:right">
+				<sub>MSJ</sub>
+			</footer>
+		</article>
+	</div>
+	<div class="clearfix"></div>
+
+    <div class="col-lg-4 col-md-4" style="margin-top:25px">
+        <a asp-controller="Product" asp-action="SmartHouse">
+			<img src="~/images/Logos/SmartHouse.svg" alt="SmartHouse" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+        </a>
+        <article>
+            <header><h3>Smart House</h3></header>
+			@SharedLocalizer["SmartHouse"]
+            <footer style="text-align:right">
+                <sub>Smart House</sub>
+            </footer>
+        </article>
+    </div>
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="Checkpoint">
+			<img src="~/images/Logos/Checkpoint.svg" alt="Checkpoint" class="img-responsive" style="width: 100%; height:100%; background-color:#6a696a; border:solid;border-width:1px; border-color:#6a696a" with="100%" />
+		</a>
+		<article>
+			<header><h3>Checkpoint</h3></header>
+			@SharedLocalizer["Checkpoint"]
+			<footer style="text-align:right">
+				<sub>Checkpoint building surveyors</sub>
+			</footer>
+		</article>
+	</div>
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="Kdt">
+			<img src="~/images/Logos/Kdt.svg" alt="Kdt" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<header><h3>KDT</h3></header>
+			@SharedLocalizer["Kdt"]
+			<footer style="text-align:right">
+				<sub>KDT</sub>
+			</footer>
+		</article>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="col-lg-4 col-md-4" style="margin-top:25px">
+		<a asp-controller="Product" asp-action="Zsh">
+			<img src="~/images/Logos/Zsh.svg" alt="@SharedLocalizer["ZSH"]" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+		</a>
+		<article>
+			<header><h3>@SharedLocalizer["ZSH"]</h3></header>
+			@SharedLocalizer["ZSH_desc"]
+			<footer style="text-align:right">
+				<sub>Svitlo Shakhtarya</sub>
+			</footer>
+		</article>
+	</div>
+
+</div>
+<div class="clearfix"></div>

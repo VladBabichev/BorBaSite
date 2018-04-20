@@ -1,0 +1,60 @@
+﻿@using BorBaNetCore.DataModel
+@model List<Messages>
+
+@*<div class="wrapper wrapper-content animated fadeInRight">
+        <div class="" id="table-view">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content bsh">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Пользователь</th>
+                                    <th>Сообщение</th>
+                                    <th>Дата</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model != null)
+                                {
+
+                                    @foreach (var msg in Model)
+                                    {
+                                        @Html.Partial("TableView", msg);
+                                    }
+
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+	<div class="wrapper wrapper-content animated fadeInRight" style="margin:0px">
+		<table class="table table-striped" style="margin:0px">
+			<thead>
+				<tr>
+					<th>Пользователь</th>
+					<th>Сообщение</th>
+					<th>Дата</th>
+				</tr>
+			</thead>
+			<tbody>
+				@if (Model != null)
+			{
+
+					@foreach (var msg in Model)
+				{
+						@Html.Partial("TableView", msg);
+				}
+
+			}
+
+			</tbody>
+		</table>
+	</div>
+
+   

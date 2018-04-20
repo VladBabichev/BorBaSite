@@ -1,0 +1,18 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<table style="margin:0px;margin-top:15px;margin-bottom:15px;background-color:transparent;border:none;">
+	<tbody style="border:none;">
+		<tr>
+			<td style="width:64px;">
+				<img src="~/images/Logos/Zsh.svg" alt="@SharedLocalizer["ZSH"]" style="width: 64px; height:32px;" />
+			</td>
+			<td>
+				<span style="margin:0px;margin-left:15px;font-size:larger;"><b>@SharedLocalizer["ZSH"]</b></span>
+			</td>
+		</tr>
+	</tbody>
+</table>

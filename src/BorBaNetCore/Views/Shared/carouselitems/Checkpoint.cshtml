@@ -1,0 +1,11 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<li>
+	<a asp-controller="Product" asp-action="Checkpoint" class="tooltips" title="@SharedLocalizer["Checkpoint"]">
+		<span style="color:white">Checkpoint</span>
+	</a>
+</li>

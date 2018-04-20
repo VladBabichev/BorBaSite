@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var currentCulture = ViewBag.CurrentCulture;
+}
+@Html.Partial("_carouselSmall")
+@Html.Partial("_start2")
+
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".home_MenuItem").addClass("active");
+
+        });
+    </script>
+
+}

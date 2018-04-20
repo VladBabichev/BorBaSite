@@ -1,0 +1,152 @@
+﻿@using BorBaNetCore.DataModel
+@model Messages
+
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
+@{
+    var currentCulture = ViewBag.CurrentCulture;
+}
+
+
+@inject IViewLocalizer Localizer
+@inject IOptions<RequestLocalizationOptions> LocOptions
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<div class="row">
+    <form id="contact-us" asp-controller="ContactUs" asp-action="Save" method="post" class="form-horizontal col-md-12 col-sm-12 col-xs-12 pull-left">
+        @*<div asp-validation-summary="All" class="text-danger"></div>*@
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Name" class="col-md-2 control-label"> </label>
+            <div class="col-md-10 col-sm-12">
+                <input asp-for="Name" class="form-control input-group-sm" style="border-radius:5px;background-color:lemonchiffon;" />
+                <span asp-validation-for="Name" class="text-danger pull-right"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Subject" class="col-md-2 control-label"> </label>
+            <div class="col-md-10 col-sm-12">
+                <input asp-for="Subject" class="form-control pull-right" style="border-radius:5px;background-color:lemonchiffon;" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email" class="col-md-2 control-label"></label>
+            <div class="col-md-10 col-sm-12">
+                <input asp-for="Email" type="Text" class="form-control pull-right" style="border-radius:5px;background-color:lemonchiffon;" />
+                <span asp-validation-for="Email" class="text-danger pull-right"></span>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Text" class="col-md-2 control-label"></label>
+            <div class="col-md-10 col-sm-12">
+                <textarea asp-for="Text" rows="5" cols="11" class="form-control txtText" style="border-radius:5px;background-color:lemonchiffon;"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">&nbsp;</label>
+            <div class="col-md-10 col-sm-12">
+                @*<input type="submit" class="btn-white btnCancel left btn" value=@Localizer["Cancel"] />*@
+                <input type="submit"  class="msgSubmit btn-primary save-btn btnSave left btn" value=@Localizer["Submit"] />
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $(".msgSubmit").click(function () {
+            $("*").css("cursor", "wait");
+        });
+
+            var msgSucces = '@SharedLocalizer["msgSucces"]';
+            var msgErr = '@SharedLocalizer["MsgErr"]';
+    if('@ViewBag.successMessage'=="succes")
+    {
+        //iziToast.show({
+        //        id: null,
+        //        class: '',
+        //        title: '',
+        //        titleColor: '',
+        //        titleSize: '',
+        //        titleLineHeight: '',
+        //        message: '',
+        //        messageColor: '',
+        //        messageSize: '',
+        //        messageLineHeight: '',
+        //        backgroundColor: '',
+        //        theme: 'light', // dark
+        //        color: '', // blue, red, green, yellow
+        //        icon: '',
+        //        iconText: '',
+        //        iconColor: '',
+        //        image: '',
+        //        imageWidth: 50,
+        //        maxWidth: null,
+        //        zindex: null,
+        //        layout: 1,
+        //        balloon: false,
+        //        close: true,
+        //        closeOnEscape: false,
+        //        rtl: false,
+        //        position: 'bottomRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
+        //        target: '',
+        //        targetFirst: true,
+        //        toastOnce: false,
+        //        timeout: 5000,
+        //        animateInside: true,
+        //        drag: true,
+        //        pauseOnHover: true,
+        //        resetOnHover: false,
+        //        progressBar: true,
+        //        progressBarColor: '',
+        //        progressBarEasing: 'linear',
+        //        overlay: false,
+        //        overlayClose: false,
+        //        overlayColor: 'rgba(0, 0, 0, 0.6)',
+        //        transitionIn: 'fadeInUp',
+        //        transitionOut: 'fadeOut',
+        //        transitionInMobile: 'fadeInUp',
+        //        transitionOutMobile: 'fadeOutDown',
+        //        buttons: {},
+        //        onOpening: function () { },
+        //        onOpened: function () { },
+        //        onClosing: function () { },
+        //        onClosed: function () { }
+        //});
+
+        $.bootstrapGrowl(msgSucces, {
+            ele: 'body', // which element to append to
+            type: 'success', // (null, 'info', 'danger', 'success')
+            offset: { from: 'top', amount: 20 }, // 'top', or 'bottom'
+            align: 'right', // ('left', 'right', or 'center')
+            width: 250, // (integer, or 'auto')
+            delay: 9000, // Time while the message will be displayed. It's not equivalent to the *demo* timeOut!
+            allow_dismiss: true, // If true then will display a cross to close the popup.
+            stackup_spacing: 10 // spacing between consecutively stacked growls.
+
+        });
+    }
+    else if('@ViewBag.successMessage'=="err")
+    {
+        $.bootstrapGrowl(msgErr + ' ' + '@ViewBag.ErrInfo', {
+            ele: 'body', // which element to append to
+            type: 'danger', // (null, 'info', 'danger', 'success')
+            offset: { from: 'top', amount: 20 }, // 'top', or 'bottom'
+            align: 'right', // ('left', 'right', or 'center')
+            width: 400, // (integer, or 'auto')
+            delay: 9000, // Time while the message will be displayed. It's not equivalent to the *demo* timeOut!
+            allow_dismiss: true, // If true then will display a cross to close the popup.
+            stackup_spacing: 10 // spacing between consecutively stacked growls.
+
+        });
+    }
+            });
+</script>

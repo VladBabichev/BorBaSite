@@ -1,0 +1,33 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+<div class="row">
+	@Html.Partial("projectHeaders/TED")
+	<p>
+		WinForms-застосування для аналізу ринку енергоносіїв.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkEps")
+	</p>
+	<p>
+		Застосування дозволяє:
+	</p>
+	<ul>
+		<li>
+			здійснювати аналіз ринку енергоносіїв;
+		</li>
+		<li>
+			проводити тендери і вибір постачальників;
+		</li>
+		<li>
+			планувати і укладати контракти з клієнтами.
+		</li>
+	</ul>
+	<p>
+		Технології: WinForms, C#, DevExpress, Visual Studio Tools for Office, ADO.NET, MS SQL Server
+	</p>
+</div>
+@Html.Partial("screens/_TedScreens")

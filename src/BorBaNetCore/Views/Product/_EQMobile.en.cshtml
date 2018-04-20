@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var currentCulture = ViewBag.CurrentCulture;
+    var currentCulture1 = ViewData["CurrentCulture"];
+}
+<div class="row">
+	@Html.Partial("projectHeaders/EQMobile")
+    <p>
+        The mobile application for the vehicle repair shops staff.
+    </p>
+    <p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkPPG")
+    </p>
+    </p>
+    <p>
+		The EQ system contains two mobile applications and a Web service for communicating with the EQ database.
+    </p>
+    <p>
+        <h4>EQ-SFDC (Shop floor data capture)</h4>
+    </p>
+    <p>
+        Android-application for the vehicle repair shops staff.
+    </p>
+    <p>       
+        The application privides views the works shedule and registrations of works done online.
+    </p>
+    <p>
+        Thechologies: Java for Android, XML
+    </p>
+
+    <p>
+        <h4>EQ-Photos</h4>
+    </p>
+    <p>
+        The mobile cross-platform application privides take a picture of vehicles, recognizes vehicle number and automaticly registers vehicle encident
+        in EQ data base.  
+    </p>
+    <p>
+        Thechologies: Xamarin, C#, json, XML
+    </p>
+
+    <p>
+        <h4>EQ-WebService</h4>
+    </p>
+    <p>
+        Web-service provides metodths to access EQ-SFDC and EQ-Photos applications to EQ data base.
+    </p>
+    <p>
+        Thechologies: WCF, VB.Net, MS SQL Server
+    </p>
+
+</div>
+@Html.Partial("screens/_EQMobileScreens")

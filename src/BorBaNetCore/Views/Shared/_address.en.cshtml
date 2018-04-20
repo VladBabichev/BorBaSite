@@ -1,0 +1,27 @@
+
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<div class="row" style="background-color:#335271;color:white;padding-bottom:10px;margin-top:10px;">
+    <div class="col-md-4">
+        <h3>Address:</h3>
+        <article>
+			@SharedLocalizer["Address"]
+        </article>
+    </div>
+    <div class="col-md-3">
+        <h3>Phone:</h3>
+        <article>
+            +380 (66) 376 50 36 <br />+380 (98) 059 48 12
+        </article>
+    </div>
+    <div class="col-md-5">
+        <h3>eMail:</h3>
+        <article style="padding-bottom:5px;">
+            borbaoffice@gmail.com, babichev_vlad@yahoo.com, vladibor1961@yahoo.com
+        </article>
+    </div>  
+</div>

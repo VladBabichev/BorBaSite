@@ -1,0 +1,27 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+<div class="row">
+	@Html.Partial("projectHeaders/Mvp")
+	<p>
+		WinForms-приложение для анализа финансовых результатов деятельности сети автомастерских.
+	</p>
+	<p>
+		Приложение предоставляет средства для анализа финансовых результатов от продажи краски, 
+		покраски автомобилей и выполнения ремонтных работ в сети автомастерских.
+	</p>
+	<p>
+		В состав приложения входит служба Windows для сбора данных о деятельности автомастерских.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkPPG")
+	</p>
+
+	<p>
+		Технологии: WinForms, C#, WCF, ADO.NET, MS SQL Server
+	</p>
+</div>
+@Html.Partial("screens/_MvpScreens")

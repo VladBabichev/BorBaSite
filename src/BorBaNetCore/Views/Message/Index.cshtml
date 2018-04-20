@@ -1,0 +1,40 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var currentCulture = ViewBag.CurrentCulture;
+    var currentCulture1 = ViewData["CurrentCulture"];
+}
+<!DOCTYPE html>
+<html>
+<head>
+    @Html.Partial("_Styles");
+    @Html.Partial("_Scripts");
+
+</head>
+<body >
+    <div>
+        @if (currentCulture == "ru")
+        {
+           
+        }
+        else if (currentCulture == "en")
+        {
+           
+        }
+        else if (currentCulture == "uk")
+        {
+           
+        }
+        @Html.Partial("_WebSoccet.cshtml");
+    </div>
+</body>
+
+</html>
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".message_MenuItem").addClass("active");
+
+        });
+    </script>
+}

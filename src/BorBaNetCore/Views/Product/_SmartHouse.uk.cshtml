@@ -1,0 +1,22 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<script src="~/js/borba.js"></script>
+
+<div class="row">
+	@Html.Partial("projectHeaders/SmartHouse")
+	<p>
+		Web-застосування "Розумний Дім".
+	</p>
+	<p>
+		Застосування дозволяє управляти температурою в будинку в онлайн-режимі.
+	</p>
+	<p>
+		Технології: C#, ASP.NET MVC 5, LINQ, MS SQL Server, JavaScript, HTML5, CSS, Bootstrap, Google API, Web API
+	</p>
+	<p>
+		Подивитися працюючу версію цієї програми можна <a href="http://82.117.250.53:8080" target="_blank">тут</a>.
+		Для входу введіть ім'я<i>admin</i> і пароль <i>admin</i>.
+	</p>
+</div>
+@Html.Partial("screens/_SmartHouseScreens")

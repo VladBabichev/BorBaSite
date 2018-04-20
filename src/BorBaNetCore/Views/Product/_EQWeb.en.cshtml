@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var currentCulture = ViewBag.CurrentCulture;    
+}
+
+<div class="row">
+	@Html.Partial("projectHeaders/EQWeb")
+    <p>
+        The Web version of application for the vehicle repair shops.
+    </p>
+    <p>
+        The application provide registering vehicle acsidents and estimates parts and works on line.
+    </p>
+
+    <p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkPPG")
+    </p>
+
+    <p>
+        Thechologies: VB.Net, C#, XML, XSLT, ASP.NET Web Forms, ADO.NET, MS SQL Server, DevExpress, 3ds Max
+    </p>
+    <p>
+        To see the developed version of this application please go to <a href="http://82.117.250.53/EQWEB" target="_blank">here</a>.
+        Login: <i>test</i> Password: <i>1</i>.
+    </p>
+</div>
+@Html.Partial("screens/_EQWebScreens")

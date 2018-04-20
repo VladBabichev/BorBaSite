@@ -1,0 +1,12 @@
+﻿@using BorBaNetCore.DataModel
+@model Messages
+<tr>
+
+	<td >@Model.Name.Trim()</td>
+	<td style="width:100%">
+        <textarea asp-for="Text"   readonly="readonly" rows="5"  class="form-control txtText" style="border-radius:5px;"></textarea>
+    </td>
+	<td >
+        @Model.RegDate.Value.ToShortDateString()
+    </td>
+</tr>

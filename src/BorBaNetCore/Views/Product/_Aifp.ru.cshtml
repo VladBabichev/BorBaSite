@@ -1,0 +1,21 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+<div class="row">
+	@Html.Partial("projectHeaders/Aifp")
+
+	<p>
+		WinForms-приложение для проведения сложных психологических тестов и тестов способностей работников социальной безопасности (полиция, пожарные и т.п.)
+		при их устройстве на работу. По данным тестов приложение создает всесторонние рекомендации для различных организаций.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkAifp")
+	</p>
+	<p>
+		Технологии: VB.Net, C#, XML, XSLT, ADO.NET, MS SQL Server, Crystal Reports, WCF
+	</p>
+</div>
+@Html.Partial("screens/_AifpScreens")

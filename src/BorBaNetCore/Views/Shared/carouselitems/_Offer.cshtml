@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<ul>
+	<li>
+		@SharedLocalizer["Offer1"]
+	</li>
+	<li>
+		@SharedLocalizer["Offer2"]
+	</li>
+	<li>
+		@SharedLocalizer["Offer3"]
+	</li>
+	<li>
+		@SharedLocalizer["Offer4"]
+	</li>
+	<li>
+		@SharedLocalizer["Offer5"]
+	</li>
+	<li>
+		@SharedLocalizer["Offer6"]
+	</li>
+</ul>

@@ -1,0 +1,57 @@
+﻿@using BorBaNetCore.Models.AccountViewModels
+    @model LoginViewModel
+    @{
+        Layout = null;
+    }
+    <!DOCTYPE html>
+    <html>
+    <head>
+       
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BorBa | Login</title>
+
+      
+        @Html.Partial("_Styles")
+        @Html.Partial("_Scripts")
+    </head>
+    <body class="gray-bg">
+        <div class="middle-box text-center loginscreen animated fadeInDown">
+            <div>
+                <div>
+                    <h1 class="logo-name">BorBa</h1>
+                </div>
+                <h3>Welcome to BorBa</h3>
+                <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData[Constants.Route.RETURN_URL]" class="m-t" role="form">
+                    @*<div asp-validation-summary="ValidationSummary.All" class="text-danger"></div>*@
+                    <div class="form-group">
+                        <input asp-for="Email"  class="form-control set-focus" placeholder="guest" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="Password" class="form-control"  />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="RememberMe" type="checkbox" />
+                        <label asp-for="RememberMe" class="text-info"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>To login in the guest mode just press the login button.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+                </form>
+            </div>
+        </div>
+        @*@Html.Partial("_ScriptsCommon")
+        <script>
+            $(function () {
+                $('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green',
+                    radioClass: 'iradio_square-green',
+                });
+
+                $('.set-focus').focus();
+            })</script>*@
+    </body>
+</html>

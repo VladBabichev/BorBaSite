@@ -1,0 +1,33 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<table style="margin:0px;background-color:transparent;border:none;">
+	<tbody style="border:none;">
+		<tr>
+			<td style="width:32px;">
+				<img src="~/images/Banners/icon4.svg" alt=".NET WinForms" style="width:32px; height:32px;margin:10px;" />
+			</td>
+			<td>
+				<h4>@SharedLocalizer["WinForms"]</h4>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<ul>
+					@Html.Partial("carouselItems\\Aifp")
+					@Html.Partial("carouselItems\\EQWin")
+					@Html.Partial("carouselItems\\MVP")
+					@Html.Partial("carouselItems\\EPS")
+					@Html.Partial("carouselItems\\TED")
+					@Html.Partial("carouselItems\\PStore")
+					@Html.Partial("carouselItems\\Checkpoint")
+					@Html.Partial("carouselItems\\H2O")
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+  
+}
+<script src="~/js/borba.js"></script>
+
+<div class="row">
+	@Html.Partial("projectHeaders/Msj")
+    <p>
+		The Web application for a cleaning company to plan and manage works execution for customers.
+    </p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+	</p>
+   <p>
+        Techologies: C#, ASP.NET MVC 5, LINQ, MS SQL Server, JavaScript, HTML5, CSS, Bootstrap, Google API, Web API
+    </p>
+    <p>
+        To see the developed version of application pleas go to <a href="http://82.117.250.53:5000" target="_blank">here</a>.
+        Login:<i>admin</i>Password: <i>admin</i>.
+    </p>
+</div>
+@Html.Partial("screens/_msjScreens")

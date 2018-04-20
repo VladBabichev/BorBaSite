@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+@SharedLocalizer["Address"]<br />
+<span style="color:blueviolet">borbaoffice@gmail.com</span>
+
+<div class="row" style="margin-left:0px;margin-right:0px;margin-top:20px;">
+	<div class="col-md-3" style="margin-left:0px;margin-right:0px;">
+		<img src="~/images/ContactUs/Borovick.png" alt="Боровик " class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+	</div>
+	<div class="col-md-3" style="margin-left:0px;margin-right:0px;">
+		@SharedLocalizer["Borovick"]<br />
+		<span style="color:blueviolet">vladibor1961@yahoo.com</span><br />
+		+380 (98) 059 48 12
+		<br />&nbsp;
+	</div>
+    <div class="col-md-3" style="margin-left:0px;margin-right:0px;">
+        @SharedLocalizer["Babichev"]<br />
+        <span style="color:blueviolet">babichev_vlad@yahoo.com</span><br />
+        +380 (66) 376 50 36
+    </div>
+	<div class="col-md-3" style="margin-left:0px;margin-right:0px;">
+		<img src="~/images/ContactUs/Babichev2.png" alt="Бабичев" class="img-responsive" style="width: 100%; height:100%; background-color:white; border:solid;border-width:1px; border-color:lightgray" with="100%" />
+	</div>
+	
+</div>

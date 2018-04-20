@@ -1,0 +1,64 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="row">
+    <div class="col-lg-1 col-sm-1 pull-left">
+        <img src="~/images/Babichev.jpg" class="img-circle" width="80" height="80" />"
+    </div>
+    <div class="col-lg-5 col-sm-5 ">
+        <div>
+            <span style="color:#3CB371;  margin-left:100px;">
+                Vladimir Borovick <span style="color:#FFD700;  margin-left:10px;"><a>(vladibor@yahoo.com)</a></span>
+            </span>
+        </div>
+        <div>
+            <span style="color:#3CB371;  margin-left:100px;">
+                Vladimir Babichev <span style="color:#FFD700;  margin-left:10px;"><a>(babichev_vlad@yahoo.com)</a></span>
+            </span>
+        </div>
+        <div>
+            <span style="color:#3CB371;  margin-left:100px;">
+                & Team
+            </span>
+        </div>
+    </div>
+    <div class="col-lg-5 col-sm-5 ">
+        <div>
+            <text style="font-size:larger;">
+                <span style="font-size:larger;">
+                    The solid understanding of . NET technologies. The big long-term experience of designing and development of business applications and databases
+                </span>
+            </text>
+        </div>
+    </div>
+
+    <div class="col-lg-1 col-sm-1 pull-right">
+        <img src="~/images/MVC-Dev.jpg" class="img-circle" width="80" height="80" />"
+    </div>
+</div>
+<
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".home_MenuItem").addClass("active");
+
+        });
+    </script>
+}
+<script>
+    drawRec('cnv1', 'NET_CORE_MVC');
+    drawRec('cnv2', 'NET_CORE_MVC');
+    drawRec('cnv3', 'NET_CORE_MVC');
+    drawRec('cnv4', 'NET_CORE_MVC');
+    drawRec('cnv5', 'NET_CORE_MVC');
+    drawRec('cnv6', 'NET_CORE_MVC');
+    drawText1('cnv1', 'NET CORE MVC');
+    drawText1('cnv2', 'ASP NET MVC');
+    drawText1('cnv3', 'WINDOWS FORMS');
+    drawText1('cnv4', 'ASP NET WEB FORM');
+    drawText1('cnv5', 'DEV EXPRESS');
+    drawText1('cnv6', 'MS SQL');
+    //setInterval(rotate, 100); 
+</script>

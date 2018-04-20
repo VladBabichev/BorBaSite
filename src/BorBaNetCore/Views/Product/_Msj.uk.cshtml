@@ -1,0 +1,24 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+<script src="~/js/borba.js"></script>
+
+<div class="row">
+	@Html.Partial("projectHeaders/Msj")
+	<p>
+		Web-застосування для клінінгової компанії, яке дозволяє планувати і контролювати виконання робіт у замовників.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+	</p>
+	<p>
+		Технології: C#, ASP.NET MVC 5, LINQ, MS SQL Server, JavaScript, HTML5, CSS, Bootstrap, Google API, Web API
+	</p>
+	<p>
+		Подивитися працюючу версію цієї програми можна <a href="http://82.117.250.53:5000" target="_blank">тут</a>.
+		Для входу введіть ім'я <i>admin</i> і пароль <i>admin</i>.
+	</p>
+</div>
+@Html.Partial("screens/_msjScreens")

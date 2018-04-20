@@ -1,0 +1,49 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+<script src="~/js/borba.js"></script>
+
+<div class="row">
+	@Html.Partial("projectHeaders/Zsh")
+	<p>
+		Projects within the framework of the corporate information system of 
+		<a href="http://www.shaht.kharkov.ua/" target="_blank">
+			the public joint-stock company "Kharkov machine-building plant "Svitlo Shakhtarya"
+		</a>.
+	</p>
+	<p>
+		Projects provide tools for:
+		<ul>
+			<li>
+				product data management;
+			</li>
+			<li>
+				resource management;
+			</li>
+			<li>
+				scheduling and production management;
+			</li>
+			<li>
+				employees management;
+			</li>
+			<li>
+				financial management;
+			</li>
+			<li>
+				sales management;
+			</li>
+			<li>
+				purchases management;
+			</li>
+			<li>
+				accounting.
+			</li>
+		</ul>
+	</p>
+	<p>
+		Techologies: C#, XML, XSLT, Windows Forms, ASP.NET Web Forms, ADO.NET, MS SQL Server, Kompas API, Pro/ENGINEER API, Visual FoxPro,  FoxPro,  Clipper Nantucket
+	</p>
+</div>
+@*@Html.Partial("screens/_ZshScreens")*@

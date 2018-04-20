@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+}
+<div class="container" style="margin-left:10px;margin-top:30px;">
+    <div >
+        <section>
+			Our team has over 30 years of experience in IT.
+			We have extensive experience in the development of databases and business applications.
+			We have developed
+			<a asp-controller="Home" asp-action="Index">
+				a lot of projects
+			</a>
+			using a range of Microsoft technologies.
+			We offer a full cycle of developing applications based on Microsoft technology from the functional specification to implementation,
+			implementation and maintenance.
+</section>
+     </div>   
+	<div>
+		<h3>We offer:</h3>
+		<ul>
+			<li> Design and development of business application specifications;</ li>
+			<li> Database design and query development;</ li>
+			<li> WinForms applications development; </ li>
+			<li> WPF applications development; </ li>
+			<li> Web applications development (Web Forms, ASP.Net MVC, ASP.Net Core); </ li>
+			<li> Windows services development;</ li>
+			<li> Web services development (WCF, Web API, Rest API);</ li>
+			<li> Cross-platform mobile applications development (iOS, Android & Windows Phone); </ li>
+			<li> Development of comprehensive analytical and synthetic reports (DevExpress Reporting, Crystal Reports, MS Reports, MS Office Interop, Google API);</ li>
+			<li> Design, code, test and deploy applications according to business intelligence specifications;</ li>
+			<li> Support and maintenance of existing applications, refactoring code  and fixing bugs;</ li>
+			<li> Export/import of Excel/ Word data to different data provider formats.</ li>
+		</ul>
+	</div>
+    <h3 >Qualifications:</h3>
+	@Html.Partial("_qualifications")
+ </div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".home_MenuItem").addClass("active");
+
+        });
+    </script>
+}

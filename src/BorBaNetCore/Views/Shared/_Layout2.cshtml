@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
+
+@inject IViewLocalizer Localizer
+@inject IOptions<RequestLocalizationOptions> LocOptions
+@{
+    var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+    var currentCulture = requestCulture.RequestCulture.Culture.Name;  
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,IE=9" http-equiv="X-UA-Compatible" />   
+	<title>BorBa - Software Development Team</title>
+	<link rel="SHORTCUT ICON" href="/BorBa.ico" type="image/x-icon">
+   @*@if (currentCulture == "ru")
+    {
+        <title>@ViewData["Title"] - Сайт BorBa </title>
+    }
+    else if (currentCulture == "en")
+    {
+        <title>@ViewData["Title"] - BorBa Web Site</title>
+    }
+    else if (currentCulture == "uk")
+    {
+        <title>@ViewData["Title"] - Сайт BorBa</title>
+    }*@
+
+    @Html.Partial("_Styles")
+    @Html.Partial("_Scripts")
+    <link href="~/css/BorBa.css" rel="stylesheet" />
+</head>
+
+<body style="background-color:azure;min-width:10px;">
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#335271;">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+						<img src="~/images/Logos/BorbaLogo.svg" style="border:none;margin-left:5px;margin-right:0px;margin-top:-5px;" height="32" width="32" />
+					</a>
+
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav" style="margin-left:10px;margin-top:-1px;">
+						<li class="home_MenuItem"><a asp-area="" asp-controller="Home" asp-action="Index" style="background-color:#335271;margin-left:-10px;">@Localizer["Home"]</a></li>
+						<li class="contact_MenuItem"><a asp-area="" asp-controller="ContactUs" asp-action="Index" style="background-color:#335271;margin-left:-10px;">@Localizer["Contact Us"]</a></li>
+						<li class="about_MenuItem"><a asp-area="" asp-controller="AboutUs" asp-action="Index" style="background-color:#335271;margin-left:-10px;">@Localizer["About Us"]</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style="margin-right:0px;margin-top:8px;margin-left:0px;">
+						<li>
+							<form id="selectLanguageRB" asp-controller="Home"
+								  asp-action="SetLanguage" asp-route-returnUrl="@Context.Request.Path"
+								  method="post" class="form-horizontal" role="form">
+								<div id="RadioButtonGroup" style="color:white;">
+									<label class="radio-inline">
+										<input id="l_en" type="radio" name="culture" class="radioLanguage" value="en" style=""><span style="font-size:70%">@Localizer["ENG"]</span>
+									</label>
+									<label class="radio-inline">
+										<input id="l_ru" type="radio" name="culture" class="radioLanguage" value="ru"><span style=" font-size:70%;">@Localizer["RUS"]</span>
+									</label>
+									<label class="radio-inline">
+										<input id="l_uk" type="radio" name="culture" class="radioLanguage" value="uk"><span style=" font-size:70%;">@Localizer["UKR"]</span>
+									</label>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	<div class="container visible-sm visible-xs" style="color:white;margin-top:50px">
+	</div>
+
+		<div class="container ">
+			@Html.Partial("_carousel")
+			@* @Html.Partial("_carouselSmall");*@
+			@RenderBody()
+			<div class="clearfix"></div>
+			@Html.Partial("_address")
+		</div>
+		<div class="clearfix"></div>
+
+		<div>
+			<hr />
+			<footer style="margin:25px;">
+				<div class="row">
+					<div class="col-sm-6">
+						<p>&copy; 2017 - BorBa - Software Development Team</p>
+						@*@if (currentCulture == "ru")
+						{
+							<p>&copy; 2017 - Сайт BorBa</p>
+						}
+						else if (currentCulture == "en")
+						{
+							<p>&copy; 2017 - BorBa Web Site</p>
+						}
+						else if (currentCulture == "uk")
+						{
+							<p>&copy; 2017 - Сайт BorBa</p>
+						}*@
+					</div>
+					<div class="col-sm-6 text-right">
+						@await Html.PartialAsync("_SelectLanguagePartial")
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		@RenderSection("scripts", required: false)
+	</body>
+
+
+
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        initCulture();
+
+        $(".nav a").on("click", function () {
+            $(".nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
+        });
+
+        $(".LanguageId").on("change", function () {
+            var cul = $(this).val();
+            $("#selectLanguage").submit();
+        });
+
+        $(".radioLanguage").on("change", function () {
+            $("#selectLanguageRB").submit();
+        });
+
+    });
+
+    function initCulture() {
+        if ('@requestCulture.RequestCulture.UICulture.Name' == 'en')
+            $('#l_en').prop('checked', true);
+        else if ('@requestCulture.RequestCulture.UICulture.Name' == 'ru')
+            $('#l_ru').prop('checked', true);
+        else if ('@requestCulture.RequestCulture.UICulture.Name' == 'uk')
+            $('#l_uk').prop('checked', true);
+    }
+</script>

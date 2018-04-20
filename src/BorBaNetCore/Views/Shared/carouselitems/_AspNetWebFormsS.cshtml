@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<table style="margin:0px;background-color:transparent;border:none;">
+	<tbody style="border:none;">
+		<tr>
+			<td style="width:32px;">
+				<img src="~/images/Banners/icon3.svg" alt="ASP.NET Web Forms" style="width:32px; height:32px;margin:10px;" />
+			</td>
+			<td>
+				<h4>@SharedLocalizer["AspNetWebForms"]</h4>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<ul>
+					@Html.Partial("carouselItems\\EQWeb")
+					@Html.Partial("carouselItems\\AifpWeb")
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";   
+}
+<div >
+	@Html.Partial("projectHeaders/Mvp")
+    <p>
+		The WinForms application for analyzing the financial results of the network of vehicle repair shops.
+    </p>    
+	<p>
+	The application provides a means for analyzing financial results from the sale of paint, 
+	painting cars and performing repair work in a network of vehicle repair shops.	
+	</p>
+    <p>      
+		The application has windows service to collect the vehicle repair shops data.
+    </p>
+    <p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkPPG")
+    </p>
+
+    <p>
+        Thechologies: WinForms, C#, WCF, ADO.NET, MS SQL Server
+    </p>
+</div>
+@Html.Partial("screens/_MvpScreens")

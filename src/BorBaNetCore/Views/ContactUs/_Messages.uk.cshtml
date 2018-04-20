@@ -1,0 +1,24 @@
+﻿@using BorBaNetCore.DataModel
+@model List<Messages>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Користувач</th>
+                <th>Повідомлення</th>
+                <th>Дата</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @foreach (var msg in Model)
+                {
+                    @Html.Partial("TableView", msg);
+                }
+            }
+        </tbody>
+    </table>
+</div>
+   

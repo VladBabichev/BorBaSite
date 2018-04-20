@@ -1,0 +1,126 @@
+﻿ body {
+    overflow-x: hidden;
+  
+ }
+ .wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    margin-top:0;
+}
+
+html, body {
+   height: 100%;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+#sidebar {
+    background-color:cornflowerblue;
+    padding-left: 0;
+    float: left;
+    min-height: 100%;
+}
+
+#sidebar .collapse.in {
+    display: inline;
+}
+
+#sidebar > .nav a:hover {
+    color: lightgreen;
+    background: cornflowerblue;
+}
+
+#sidebar > .nav a:active {
+    color: green;
+    background: cornflowerblue;
+}
+.nav > li.active {
+
+	 background: cornflowerblue;
+}
+
+#sidebar > .nav > .sidebar-sub a:hover {
+    color: lightgreen;
+    background: cornflowerblue;
+}
+
+/*
+ * off canvas sidebar
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        min-width: 44px;
+    }
+    
+    #main {
+        width: 1%;
+        left: 0;
+    }
+    
+    #sidebar .visible-xs {
+       display:inline !important;
+    }
+    
+    .row-offcanvas {
+       position: relative;
+       -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+       transition: all 0.4s ease-in-out;
+    }
+    
+    .row-offcanvas-left.active {
+       left: 45%;
+    }
+    
+    .row-offcanvas-left.active .sidebar-offcanvas {
+       left: -45%;
+       position: absolute;
+       top: 0;
+       width: 45%;
+    }
+}  
+ 
+@media screen and (min-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-left.active {
+    left: 3%;
+  }
+
+  .row-offcanvas-left.active .sidebar-offcanvas {
+    left: -3%;
+    position: absolute;
+    top: 0;
+    width: 3%;
+    text-align: center;
+    min-width:42px;
+  }
+  
+  #main {
+    left: 0;
+  }
+}     

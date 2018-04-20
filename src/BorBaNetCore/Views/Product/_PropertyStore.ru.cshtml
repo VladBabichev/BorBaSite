@@ -1,0 +1,24 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+
+<div class="row">
+	@Html.Partial("projectHeaders/PropertyStore")
+	<p>
+		WinForms-приложение для учета и оценки муниципальной собственности и дополнительных усовершенствований.
+	</p>
+	<p>
+		Приложение позволяет вести учет наличия и движения муниципальной недвижимости, ее различных параметров и характеристик, 
+		затрат на модернизацию и усовершенствование. 
+		Оно позволяет рассчитывать и учитывать балансовую и рыночную стоимость всех объектов и их дополнительных усовершенствований.	
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros").
+	</p>
+	<p>
+		Технологии: C#,  MS SQL Server, Delphi, MySQL
+	</p>
+</div>
+@Html.Partial("screens/_PropertyStoreScreens")

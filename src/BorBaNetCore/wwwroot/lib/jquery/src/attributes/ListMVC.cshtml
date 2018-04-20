@@ -1,0 +1,41 @@
+@{
+    Layout = "~/Views/Shared/_Navigation.cshtml";
+}
+<head>
+    @Html.Partial("_Styles")
+    @Html.Partial("_Scripts")
+</head>
+<div class="row" style="padding:20px;">
+    <div class="col-lg-12" style="margin-left:50px;color:seagreen">
+        <header>Products/Web Mvc</header>
+    </div>
+    <br />
+
+    <div class="col-lg-12" style="margin-left:50px;">
+        <text  style="font-size:12px;color:white;">
+            <span style="font-size:xx-large;color:white;">MSJ Web application</span>
+            <br />
+            <br />
+            The MSJ Web application is the contract managements and planning system  to the MSJ company.
+            <br />
+            To see the development version of  this Web system go to this link.<a href="http://82.117.250.53:5000">MSJ Web</a><br />
+            To login:
+            <br />
+            Login - admin
+            <br />
+            password - admin
+            <br />
+
+        </text>       
+    </div>
+    <br />
+    <br />
+</div>
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".products_MenuItem").addClass("active");
+        });
+    </script>
+}

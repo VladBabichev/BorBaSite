@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";   
+}
+<div >
+	@Html.Partial("projectHeaders/H2o")
+    <p>       
+		The WinForms application to register and manage the contracts for the installation of heating equipments.
+    </p>
+    <p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkH2O")
+    </p>
+    <p>
+        The application provide:
+    </p>
+    <ul>
+        <li>
+            management, planning and coordination of the company's work;
+        </li>
+        <li>
+            contracts management;
+        </li>
+        <li>
+            customers coordinations.
+        </li>
+    </ul>
+    <p>
+        Techologies: WinForms, C#, DevExpress, Visual Studio Tools for Office, ADO.NET, MS SQL Server, Google API
+    </p>
+</div>
+@Html.Partial("screens/_H2OScreens")

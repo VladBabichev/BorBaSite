@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";   
+}
+<div class="row">
+	@Html.Partial("projectHeaders/TED")
+    <p>
+		WinForms application for the analysis of the energy market.
+    </p>
+    <p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkEps")
+    </p>
+    <p>
+		The application allows:
+    </p>
+    <ul>
+        <li>
+            to perform energy market analysis;
+        </li>
+        <li>
+			to conduct tenders and selection of suppliers;
+        </li>
+        <li>           
+			to plan and enter into contracts with customers.
+        </li>
+    </ul>
+    <p>
+        Thechologies: WinForms, C#, DevExpress, Visual Studio Tools for Office, ADO.NET, MS SQL Server
+    </p>
+</div>
+@Html.Partial("screens/_TedScreens")

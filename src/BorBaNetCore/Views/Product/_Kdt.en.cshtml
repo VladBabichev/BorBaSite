@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var currentCulture = ViewBag.CurrentCulture;
+    var currentCulture1 = ViewData["CurrentCulture"];
+}
+<script src="~/js/borba.js"></script>
+
+<div class="row">
+	@Html.Partial("projectHeaders/kdt")
+    <p>
+		The utilities to calculates the optimal routes to access the ordering items in large warehouses.
+    </p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+	</p>
+   <p>
+        Technology: C#, MS SQL Server, SQL CLR, MS Access
+    </p>
+</div>
+@*@Html.Partial("screens/_KdtScreens")*@

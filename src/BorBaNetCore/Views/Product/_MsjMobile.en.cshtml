@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var currentCulture = ViewBag.CurrentCulture;
+    var currentCulture1 = ViewData["CurrentCulture"];
+}
+<script src="~/js/borba.js"></script>
+
+<div class="row">
+	@Html.Partial("projectHeaders/MsjMobile")
+    <p>
+		The mobile cross-platform application for employees of the cleaning company, 
+		which allows you to quickly get information about the work and schedule of their implementation and note the work actually done.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+	</p>
+    <p>
+		Techologies: C#, Xamarin, json, XML, SQLite
+    </p>
+</div>
+@Html.Partial("screens/_msjMobileScreens")

@@ -1,0 +1,24 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+
+<div class="row">
+	@Html.Partial("projectHeaders/PropertyStore")
+	<p>
+		WinForms-застосування для обліку та оцінки муніципальної нерухомості і її додаткових удосконалень.
+	</p>
+	<p>
+		Застосування дозволяє вести облік наявності та руху муніципальної нерухомості, її різних параметрів і характеристик, 
+		витрат на модернізацію та вдосконалення. 
+		Воно дозволяє розраховувати і враховувати балансову і ринкову вартість всіх об'єктів і їх додаткових удосконалень.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros").
+	</p>
+	<p>
+		Технології: C#,  MS SQL Server, Delphi, MySQL
+	</p>
+</div>
+@Html.Partial("screens/_PropertyStoreScreens")

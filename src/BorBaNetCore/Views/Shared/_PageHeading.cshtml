@@ -1,0 +1,17 @@
+﻿<div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-sm-12">
+		<h2>@Html.Raw(ViewData[Constants.Data.HEADING])</h2>
+		<ol class="breadcrumb">
+			<li>
+				<a asp-controller="Home" asp-action="Index">Dashboard</a>
+			</li>
+			<li>
+				<a asp-controller="Clients" asp-action="Index">Clients</a>
+			</li>
+			<li class="active">
+				<strong>@Html.Raw(@ViewData[Constants.Data.BREADCRUMB_TITLE])</strong>
+			</li>
+		</ol>
+	</div>
+	@RenderSection("headingactions", required: false)
+</div>

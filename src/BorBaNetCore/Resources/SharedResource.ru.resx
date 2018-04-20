@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aifp" xml:space="preserve">
+    <value>WinForms-приложение для тестирования кандидатов на рабочие вакансии и обработки результатов тестирования.</value>
+  </data>
+  <data name="AifpWeb" xml:space="preserve">
+    <value>WebForms-приложение для тестирования кандидатов на рабочие вакансии в режиме онлайн.</value>
+  </data>
+  <data name="Checkpoint" xml:space="preserve">
+    <value>Планшетное приложение для строительных инспекторов.</value>
+  </data>
+  <data name="Eps" xml:space="preserve">
+    <value>WinForms-приложение для расчетов за поставленные энергоресурсы.</value>
+  </data>
+  <data name="EQMobile" xml:space="preserve">
+    <value>Мобильные приложения для персонала автомастерской.</value>
+  </data>
+  <data name="EQWeb" xml:space="preserve">
+    <value>Web-версия системы для автомастерских, выполняющих ремонт транспортных средств, поврежденных в ДТП.</value>
+  </data>
+  <data name="EQWin" xml:space="preserve">
+    <value>Приложение для ремонтных мастерских. Это приложение позволяет принять участие в тендере на получение квот на ремонт автомобилей после несчастных случаев.</value>
+  </data>
+  <data name="H2O" xml:space="preserve">
+    <value>WinForms-приложение для регистрации и учета контрактов на установку обогревательного оборудования и контроля их выполнения.</value>
+  </data>
+  <data name="Kdt" xml:space="preserve">
+    <value>Пакет программ для расчета оптимального маршрута на больших складах при комплектации заказа.</value>
+  </data>
+  <data name="Msj" xml:space="preserve">
+    <value>Web-приложение для клининговой компании, которое позволяет планировать и контролировать выполнение работ у заказчиков.</value>
+  </data>
+  <data name="MsjMobile" xml:space="preserve">
+    <value>Мобильное кроссплатформенное приложение для сотрудников клининговой компании, которое позволяет оперативно получать информацию о работах и графике их выполнения и отмечать фактически выполненные работы.</value>
+  </data>
+  <data name="Mvp" xml:space="preserve">
+    <value>WinForms-приложение для анализа финансовых результатов деятельности сети автомастерских.</value>
+  </data>
+  <data name="PropertyStore" xml:space="preserve">
+    <value>WinForms-приложение для учета и оценки муниципальной недвижимости и ее дополнительных усовершенствований.</value>
+  </data>
+  <data name="SmartHouse" xml:space="preserve">
+    <value>Веб-приложение обеспечивает онлайн-доступ к измеренным данным температуры.</value>
+  </data>
+  <data name="TED" xml:space="preserve">
+    <value>WinForms-приложение для анализа рынка энергоносителей.</value>
+  </data>
+  <data name="ProjectsTop" xml:space="preserve">
+    <value>Приложения, разработанные нашей командой:</value>
+  </data>
+  <data name="Offer1" xml:space="preserve">
+    <value>Web (Asp.Net, MVC, Net Core, Web API, Web Forms, DevExpress)</value>
+  </data>
+  <data name="Offer2" xml:space="preserve">
+    <value>Мобильные (iOS, Android, Win Phone)</value>
+  </data>
+  <data name="Offer3" xml:space="preserve">
+    <value>Настольные (C#, VB.Net, WinForms, WPF, DevExpress)</value>
+  </data>
+  <data name="Offer4" xml:space="preserve">
+    <value>Службы Windows (WCF)</value>
+  </data>
+  <data name="Offer5" xml:space="preserve">
+    <value>Хранилища данных (MS SQL, MySQL, Postgree)</value>
+  </data>
+  <data name="Offer0" xml:space="preserve">
+    <value>Полный цикл разработки приложений от функциональной спецификации до реализации, внедрения и сопровождения:</value>
+  </data>
+  <data name="AspNetCore" xml:space="preserve">
+    <value>Приложения ASP.Net Core MVC:</value>
+  </data>
+  <data name="AspNetWebForms" xml:space="preserve">
+    <value>Приложения ASP.Net Web Forms:</value>
+  </data>
+  <data name="DB" xml:space="preserve">
+    <value>Используемые СУБД и инстументы:</value>
+  </data>
+  <data name="DevExpress" xml:space="preserve">
+    <value>Приложения с DevExpress:</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Мобильные приложения Xamarin и Java for Android:</value>
+  </data>
+  <data name="Reporting" xml:space="preserve">
+    <value>Создание всесторонних отчетов:</value>
+  </data>
+  <data name="WinForms" xml:space="preserve">
+    <value>Приложения WinForms и WPF:</value>
+  </data>
+  <data name="WinServices" xml:space="preserve">
+    <value>Службы Windows:</value>
+  </data>
+  <data name="Babichev" xml:space="preserve">
+    <value>Бабичев Владимир</value>
+  </data>
+  <data name="Borovick" xml:space="preserve">
+    <value>Боровик Владимир</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Команда разработчиков программного обеспечения</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>61001, Украина, г. Харьков, ул. Конева, 21,  Офис 212</value>
+  </data>
+  <data name="MsgErr" xml:space="preserve">
+    <value>Сообщение не отправленно.</value>
+  </data>
+  <data name="msgSucces" xml:space="preserve">
+    <value>Сообщение отправленно успешно.</value>
+  </data>
+  <data name="EmailErrorMessage" xml:space="preserve">
+    <value>Введите корректный электронный адресс.</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Почта отправителя</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+  <data name="NameErrorRequired" xml:space="preserve">
+    <value>Введите имя</value>
+  </data>
+  <data name="ErrSendEmail" xml:space="preserve">
+    <value>К сожалению, наша система временно недоступна. Пожалуйста, свяжитесь с нами по электронной почте: babichev_vlad@yahoo.com, vladibor1961@yahoo.com.</value>
+  </data>
+  <data name="ZSH" xml:space="preserve">
+    <value>КИС «Свет Шахтера»</value>
+  </data>
+  <data name="ZSH_desc" xml:space="preserve">
+    <value>Корпоративная информационная система публичного акционерного общества «Харьковский машиностроительный завод «Свет Шахтера»</value>
+  </data>
+  <data name="Offer6" xml:space="preserve">
+    <value>Всесторонние отчеты</value>
+  </data>
+</root>

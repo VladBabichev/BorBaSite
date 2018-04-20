@@ -1,0 +1,126 @@
+﻿@{
+	Layout = null;
+}
+
+<div id="myCarousel" class="carousel slide visible-md visible-lg " data-ride="carousel" data-interval="6000">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+		<li data-target="#myCarousel" data-slide-to="5"></li>
+		<li data-target="#myCarousel" data-slide-to="6"></li>
+		<li data-target="#myCarousel" data-slide-to="7"></li>
+		<li data-target="#myCarousel" data-slide-to="8"></li>
+	</ol>
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img src="~/images/Banners/banner1.svg" alt="Offers" class="img-responsive"  style="border:none" />
+			<div class="carousel-caption " role="option" style="margin-left:80px;margin-right:80px">
+				<div class="row ">
+					@Html.Partial("carouselItems\\_OfferL")
+				</div>
+			</div>
+		</div>
+
+		<div class="item ">
+			<img src="~/images/Banners/banner2.svg" alt="ASP.NET Core" class="img-responsive"   style="border:none" />
+			<div class="carousel-caption" role="option" style="margin-left:80px;margin-right:80px">
+				<div class="row" style="width:100%">
+					<div class="col-md-8 col-md-offset-4">
+						@Html.Partial("carouselItems\\_AspNetCoreL")
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<img src="~/images/Banners/banner3.svg" alt="ASP.Net WebForms" class="img-responsive"  style="border:none" />
+			<div class="carousel-caption" role="option" style="margin-left:80px;margin-right:80px">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-4">
+						@Html.Partial("carouselItems\\_AspNetWebFormsL")
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<img src="~/images/Banners/banner4.svg" alt=".Net Windows Forms & WPF" class="img-responsive"  style="border:none"  />
+			<div class="carousel-caption" role="option" style="margin-left:80px;margin-right:80px">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-4">
+						@Html.Partial("carouselItems\\_WinFormsL")
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<img src="~/images/Banners/banner5.svg" alt="DevExpress" class="img-responsive"  style="border:none"  />
+			<div class="carousel-caption" role="option" style="margin-left:80px;margin-right:80px">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-4">
+						@Html.Partial("carouselItems\\_DevExpressL")
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<img src="~/images/Banners/banner6.svg" alt="Mobile offers" class="img-responsive"  style="border:none"  />
+			<div class="carousel-caption" role="option" style="margin-left:80px;margin-right:80px">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-4">
+						@Html.Partial("carouselItems\\_MobileL")
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item ">
+			<img src="~/images/Banners/banner7.svg" alt="Windows Services" class="img-responsive"  style="border:none"  />
+			<div class="carousel-caption" role="option" style="margin-left:80px;margin-right:80px">
+				<div class="row" style="width:100%">
+					<div class="col-md-8 col-md-offset-4">
+						@Html.Partial("carouselItems\\_WinServicesL")
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<img src="~/images/Banners/banner8.svg" alt="Database" class="img-responsive"  style="border:none"  />
+			<div class="carousel-caption" role="option" style="margin-left:80px;margin-right:80px">
+				<div class="row">
+					<div class="col-lg-8 col-md-offset-4 ">
+						@Html.Partial("carouselItems\\_DbL")
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="item ">
+			<img src="~/images/Banners/banner9.svg" alt="Reporting" class="img-responsive"  style="border:none"  />
+			<div class="carousel-caption" role="option" style="margin-left:80px;margin-right:80px">
+				<div class="row" style="width:100%">
+					<div class="col-md-8 col-md-offset-4">
+						@Html.Partial("carouselItems\\_ReportingL")
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Prev</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+</div>
+

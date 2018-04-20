@@ -1,0 +1,20 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+<script src="~/js/borba.js"></script>
+
+<div class="row">
+	@Html.Partial("projectHeaders/MsjMobile")
+	<p>
+		Мобільне кроссплатформне застосування для співробітників клінінгової компанії, яке дозволяє оперативно отримувати інформацію про роботи і графік їх виконання і відзначати фактично виконані роботи.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+	</p>
+	<p>
+		Технології: C#, Xamarin, json, XML, SQLite
+	</p>
+</div>
+@Html.Partial("screens/_msjMobileScreens")

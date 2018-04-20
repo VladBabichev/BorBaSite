@@ -1,0 +1,11 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+
+<li>
+	<a asp-controller="Product" asp-action="Eps" class="tooltips" title="@SharedLocalizer["Eps"]">
+		<span style="color:white">Eps Billing</span>
+	</a>
+</li>

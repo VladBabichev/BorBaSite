@@ -1,0 +1,33 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+<div class="row">
+	@Html.Partial("projectHeaders/H2o")
+	<p>
+		WinForms-приложение для регистрации и учета контрактов на установку обогревательного оборудования и контроля их выполнения.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkH2O")
+	</p>
+	<p>
+		Оно предназначено для решения задач:
+	</p>
+	<ul>
+		<li>
+			управления, планирования и координации работ компании;
+		</li>
+		<li>
+			ведения документации по заявкам и договорам;
+		</li>
+		<li>
+			организации взаимодействия с клиентами.
+		</li>
+	</ul>
+	<p>
+		Технологии: WinForms, C#, DevExpress, Visual Studio Tools for Office, ADO.NET, MS SQL Server, Google API
+	</p>
+</div>
+@Html.Partial("screens/_H2OScreens")

@@ -1,0 +1,7 @@
+D:\Dev17\BorBa\BorbaUnitTest\bin\Debug\BorbaUnitTest.dll
+D:\Dev17\BorBa\BorbaUnitTest\bin\Debug\BorbaUnitTest.pdb
+D:\Dev17\BorBa\BorbaUnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Dev17\BorBa\BorbaUnitTest\obj\Debug\BorbaUnitTest.csprojResolveAssemblyReference.cache
+D:\Dev17\BorBa\BorbaUnitTest\obj\Debug\BorbaUnitTest.csproj.CoreCompileInputs.cache
+D:\Dev17\BorBa\BorbaUnitTest\obj\Debug\BorbaUnitTest.dll
+D:\Dev17\BorBa\BorbaUnitTest\obj\Debug\BorbaUnitTest.pdb

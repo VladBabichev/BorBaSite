@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";   
+}
+<div >
+	@Html.Partial("projectHeaders/EQWin")
+    <p>
+        The windows application for vehicle repair shops.
+    </p>
+    <p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkPPG")
+    </p>
+    <p>
+		The system consists of a windows desktop application and a Windows service 
+		to exchange data between vehicle repair shop and insurance companies or spare parts suppliers.
+    </p>
+    <p>
+        <h4>The windows application provides:</h4>
+    </p>
+    <ul>
+        <li>
+            to make an order on vehicles repair;
+        </li>
+        <li>
+            to estimates spare parts and works;
+        </li>
+        <li>
+            to reconciliation estimates with inshurance copanies and customers;
+        </li>
+        <li>
+            to order on spare parts supply;
+        </li>
+        <li>
+			to plan and manage repair works;
+        </li>
+        <li>
+            to make payments with insurance companies, suppliers and customers;
+        </li>
+        <li>
+            to make comprehensive analyticals and synthetics reports;
+        </li>
+        <li>
+            to import data about of vehicle models and times norms for repair work from GLASS and NTAR FTP serveces.
+        </li>
+    </ul>
+    <p>
+        Thechologies: WinForms, VB.Net, C#, DevExpress, WPF, Visual Studio Tools for Office, ADO.NET, MS SQL Server, 3ds Max
+    </p>
+    <p>
+        <h4>The windows service provides:</h4>
+    </p>
+    <ul>
+        <li>
+			The data exchanges between the repair shop and insurance company to reconciliation and confirm of estimates and 
+			invoices to vehicle repairs by ORM, PNet, AudaNet, ARNI, EstImage protocols;
+        </li>
+        <li>          
+            to get data about spare parts and prices by PartsAccess, PartsCheck, PartsTrader protocols;
+        </li>
+        <li>
+            the data exchanges with MYOB accounting system.
+        </li>
+    </ul>
+    <p>
+        Thechologies: Windows Services, Web Services, VB.Net, ADO.NET, MS SQL Server.
+    </p>
+</div>
+@Html.Partial("screens/_EQWinScreens")

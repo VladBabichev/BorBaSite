@@ -1,0 +1,21 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+	var currentCulture = ViewBag.CurrentCulture;
+	var currentCulture1 = ViewData["CurrentCulture"];
+}
+
+<div class="row">
+	@Html.Partial("projectHeaders/AifpWeb")
+	<p>
+		WebForms-приложение для проведения в режиме онлайн сложных психологических тестов и 
+		тестов способностей работников социальной безопасности (полиция, пожарные и т.п.) 
+		при их устройстве на работу.
+	</p>
+	<p />
+	@Html.Partial("links/_linkCompros")
+	@Html.Partial("links/_linkAifp")
+	<p>
+		Технологии: VB.Net, C#, XML, XSLT, ASP.NET Web Forms, ADO.NET, MS SQL Server
+	</p>
+</div>
+@Html.Partial("screens/_AifpWebScreens")

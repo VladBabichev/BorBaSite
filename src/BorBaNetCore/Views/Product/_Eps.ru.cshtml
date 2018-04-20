@@ -1,0 +1,20 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout2.cshtml";	
+}
+<div class="row">
+	@Html.Partial("projectHeaders/Eps")
+	<p>
+		WinForms-приложение для расчетов за поставленные энергоресурсы.
+	</p>
+	<p>
+		@Html.Partial("links/_linkCompros")
+		@Html.Partial("links/_linkEps")
+	</p>
+	<p>
+		Приложение позволяет формировать счета и осуществлять расчеты за поставленные энергоресурсы, формировать аналитическую и финансовую отчетность.
+	</p>
+	<p>
+		Технологии: WinForms, C#, Visual Studio Tools for Office, ADO.NET, MS SQL Server, PostgreSQL
+	</p>
+</div>
+@Html.Partial("screens/_EpsScreens")

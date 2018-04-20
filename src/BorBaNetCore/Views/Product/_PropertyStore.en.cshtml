@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";    
+}
+
+<div class="row">
+	@Html.Partial("projectHeaders/PropertyStore")
+    <p>
+		The windows application to register and evaluate the municipal real estate and its additional properties.
+    </p>
+    <p>       
+		The application allows you to keep a record of the availability and movement of municipal real estate, 
+		its various parameters and characteristics, the costs of modernization and improvement.
+		It allows you to calculate and take into account the balance and market value of all objects and their additional improvements.
+    </p>
+	<p>
+		@Html.Partial("links/_linkCompros").
+	</p>
+   <p>
+        Techologies: C#,  MS SQL Server, Delphi, MySQL
+    </p>
+</div>
+@Html.Partial("screens/_PropertyStoreScreens")

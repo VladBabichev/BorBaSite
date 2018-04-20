@@ -1,0 +1,24 @@
+
+@{
+    ViewData["Title"] = "Angular Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-app="MessagesApp">
+    <h1>Messages</h1>
+
+    <div ng-controller="messageController">
+        <ul>
+            <li ng-repeat="message in messages">
+                <h2>{{message.Name}} {{message.Subject}}</h2>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="~/js/messagesApp.js"></script>
+    <script src="~/js/messageFactory.js"></script>
+    <script src="~/js/MessagesController.js"></script>
+   
+</div>
+
