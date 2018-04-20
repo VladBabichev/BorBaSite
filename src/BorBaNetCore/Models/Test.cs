@@ -7,5 +7,6 @@ namespace BorBaNetCore.Models
 {
     public class Test
     {
+        public string TestProp { get; set; }
     }
 }
