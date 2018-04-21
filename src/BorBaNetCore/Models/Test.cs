@@ -9,6 +9,6 @@ namespace BorBaNetCore.Models
     {
         public string TestProp { get; set; }
         public string TestProp2 { get; set; }
-        public string TestProp3 { get; set; }
+      
     }
 }
