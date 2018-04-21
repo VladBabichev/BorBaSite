@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/BorBaNetCore/v15/Server/sqlite3
+/.vs
+/BorbaUnitTest/obj/Release
+/src/BorBaNetCore/obj/Release/net46
